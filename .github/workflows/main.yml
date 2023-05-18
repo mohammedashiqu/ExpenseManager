@@ -71,7 +71,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  package:
+  package: ##
     needs: [static-code-analysis]
     name: Generate APK
     runs-on: ubuntu-latest
